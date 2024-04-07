@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <main class="flex-fill" style="margin-bottom: 100px;">
         <!-- Header -->
         <header id="top" style="box-shadow: 0px 1px 1px;">
             <div class="container">
@@ -27,6 +27,7 @@
                     </div>
                 </div>
             </div>
+
         </header>
 
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
@@ -42,7 +43,34 @@
             </div>
             <div class="row pt-2">
                 <div class="col-md-12 text-center">
-                    <button id="btn-questao" class="btn btn-success btn-lg" onclick="questao()">Teste seu conhecimento</button>
+                    <button id="verificarbtn" class="btn btn-success btn-lg" onclick="gerarCharada()">Teste seu conhecimento</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Campos para JavaScript -->
+        <div id="formulario" style="display:none;" class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="pergunta">Pergunta:</label>
+                    <div id="pergunta"></div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <label for="palp">Seu Palpite:</label>
+                    <input type="text" id="palp" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <label for="resposta">Resposta:</label>
+                    <input type="text" id="resposta" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <button class="btn btn-primary" onclick="verificar()">Verificar</button>
                 </div>
             </div>
         </div>
@@ -70,5 +98,7 @@
         </div>
       </footer>
 
+      <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
