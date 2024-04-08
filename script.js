@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var VERIFICARBTN = document.getElementById('verificarbtn');
 function gerarCharada() {
     return __awaiter(this, void 0, void 0, function () {
-        var PERGUNTA, RESPOSTACAMPO, FORMULARIO, PALPITE, APIURL, RESPONSE, DADOS, error_1;
+        var divexplica, explica, PERGUNTA, RESPOSTACAMPO, FORMULARIO, PALPITE, APIURL, RESPONSE, DADOS, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -45,6 +45,8 @@ function gerarCharada() {
                     RESPOSTACAMPO = document.getElementById('resposta');
                     FORMULARIO = document.getElementById('formulario');
                     PALPITE = document.getElementById('palp');
+                    explica = document.getElementById('explicacao');
+                    divexplica = document.getElementById('divexplicacao');
                     APIURL = 'http://127.0.0.1:80/charadas';
                     _a.label = 1;
                 case 1:
@@ -56,15 +58,16 @@ function gerarCharada() {
                 case 3:
                     DADOS = _a.sent();
                     PERGUNTA.innerHTML = DADOS.pergunta;
+                    explica.innerText = DADOS.explicacao;
                     RESPOSTACAMPO.value = DADOS.resposta;
                     PALPITE.value = "";
                     FORMULARIO.style.display = "block";
+                    divexplica.style.display = "none";
                     RESPOSTACAMPO.style.visibility = 'hidden';
                     VERIFICARBTN.disabled = false;
                     return [3 /*break*/, 5];
                 case 4:
                     error_1 = _a.sent();
-                    console.error("API com problemas!");
                     return [3 /*break*/, 5];
                 case 5: return [2 /*return*/];
             }
@@ -73,6 +76,7 @@ function gerarCharada() {
 }
 function verificar() {
     var RESPOSTACAMPO = document.getElementById('resposta');
+    var divexplica = document.getElementById('divexplicacao');
     var resposta = RESPOSTACAMPO.value;
     var PALPITE = document.getElementById('palp');
     if (PALPITE.value.trim() === "") {
@@ -80,15 +84,17 @@ function verificar() {
         RESPOSTACAMPO.style.visibility = 'visible';
         VERIFICARBTN.disabled = true;
     }
-    else if (resposta.includes(PALPITE.value)) { //Verifica se a palavra escrita está dentro da resposta
+    else if (resposta[0] == (PALPITE.value)) { //Verifica se a palavra escrita está dentro da resposta
         RESPOSTACAMPO.value = "Parab\u00E9ns, voc\u00EA acertou. A resposta \u00E9: ".concat(resposta);
         RESPOSTACAMPO.style.visibility = 'visible';
+        divexplica.style.display = 'block';
         VERIFICARBTN.disabled = true;
     }
     else {
         RESPOSTACAMPO.value = "Que pena, voc\u00EA errou. A resposta \u00E9: ".concat(resposta);
         RESPOSTACAMPO.style.visibility = 'visible';
         VERIFICARBTN.disabled = true;
+        divexplica.style.display = 'block';
     }
 }
 (function () {

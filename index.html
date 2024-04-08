@@ -43,7 +43,7 @@
             </div>
             <div class="row pt-2">
                 <div class="col-md-12 text-center">
-                    <button id="verificarbtn" class="btn btn-success btn-lg" onclick="gerarCharada()">Teste seu conhecimento</button>
+                    <button class="btn btn-success btn-lg" onclick="gerarCharada()">Teste seu conhecimento</button>
                 </div>
             </div>
         </div>
@@ -68,12 +68,19 @@
                     <input type="text" id="resposta" class="form-control">
                 </div>
             </div>
+            <div class="row mt-3" id="divexplicacao" style="display: none;">
+                <div class="col-md-12">
+                    <h3>Explicação:</h3>
+                    <p id="explicacao"></p>
+                </div>
+            </div>
             <div class="row mt-3">
                 <div class="col-md-12">
-                    <button class="btn btn-primary" onclick="verificar()">Verificar</button>
+                    <button class="btn btn-primary" id="verificarbtn" onclick="verificar()">Verificar</button>
                 </div>
             </div>
         </div>
+        
     </main>
 
     <footer class="fixed-bottom border-top text-white shadow border-3 border-dark border-opacity-75" style="background-color: #2b4a4e;">
