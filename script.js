@@ -83,18 +83,21 @@ function verificar() {
         RESPOSTACAMPO.value = "N\u00E3o deixe o campo em branco!";
         RESPOSTACAMPO.style.visibility = 'visible';
         VERIFICARBTN.disabled = true;
+        RESPOSTACAMPO.disabled = true;
     }
     else if (resposta[0] == (PALPITE.value)) { //Verifica se a palavra escrita está dentro da resposta
         RESPOSTACAMPO.value = "Parab\u00E9ns, voc\u00EA acertou. A resposta \u00E9: ".concat(resposta);
         RESPOSTACAMPO.style.visibility = 'visible';
         divexplica.style.display = 'block';
         VERIFICARBTN.disabled = true;
+        RESPOSTACAMPO.disabled = true;
     }
     else {
         RESPOSTACAMPO.value = "Que pena, voc\u00EA errou. A resposta \u00E9: ".concat(resposta);
         RESPOSTACAMPO.style.visibility = 'visible';
         VERIFICARBTN.disabled = true;
         divexplica.style.display = 'block';
+        RESPOSTACAMPO.disabled = true;
     }
 }
 (function () {
