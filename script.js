@@ -47,7 +47,7 @@ function gerarCharada() {
                     PALPITE = document.getElementById('palp');
                     explica = document.getElementById('explicacao');
                     divexplica = document.getElementById('divexplicacao');
-                    APIURL = 'http://127.0.0.1:80/charadas';
+                    APIURL = 'https://207d6ecd-4441-45bb-bd25-eb94661d66fe-00-rw61nzo4ukj3.picard.replit.dev/charadas';
                     _a.label = 1;
                 case 1:
                     _a.trys.push([1, 4, , 5]);

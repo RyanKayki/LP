@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main class="flex-fill" style="margin-bottom: 100px;">
         <!-- Header -->
@@ -19,7 +21,7 @@
                         <div class="portal d-flex">
                             <img src="img/png/LP.com.png" class="enem img-fluid rounded" alt="" width="111">
                             <div class="col-md-12">
-                                <h2 style = "font-family:courier,arial,helvetica; padding-left: 12%;" class="pt-3">
+                                <h2 style="font-family:courier,arial,helvetica; padding-left: 12%;" class="pt-3">
                                     Exame Nacional do Ensino Médio (Enem)
                                 </h2>
                             </div>
@@ -43,69 +45,73 @@
             </div>
             <div class="row pt-2">
                 <div class="col-md-12 text-center">
-                    <button class="btn btn-success btn-lg" onclick="gerarCharada()">Teste seu conhecimento</button>
+                    <button class="btn btn-primary btn-lg" onclick="gerarCharada()">Teste seu conhecimento</button>
                 </div>
             </div>
         </div>
 
         <!-- Campos para JavaScript -->
-        <div id="formulario" style="display:none;" class="container mt-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <label for="pergunta">Pergunta:</label>
-                    <div id="pergunta"></div>
+        <div id="formulario" style="display:none; color: antiquewhite;" class="container mt-5">
+            <form class="form">
+                <div class="row1">
+                    <div class="col-md-12">
+                        <label for="pergunta" style="font-size: 40px; font-weight: bold">Pergunta.</label>
+                        <div id="pergunta"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-12">
-                    <label for="palp">Seu Palpite:</label>
-                    <input type="text" id="palp" class="form-control">
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <label for="palp" style="font-weight: bold">Seu Palpite:</label>    
+                        <input type="text" id="palp" class="form-control" maxlength="1">
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-12">
-                    <label for="resposta">Resposta:</label>
-                    <input type="text" id="resposta" class="form-control">
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <label for="resposta" style="font-weight: bold">Resposta:</label>
+                        <input type="text" id="resposta" class="form-control">
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-3" id="divexplicacao" style="display: none;">
-                <div class="col-md-12">
-                    <h3>Explicação:</h3>
-                    <p id="explicacao"></p>
+                <div class="row mt-3" id="divexplicacao" style="display: none;">
+                    <div class="col-md-12">
+                        <h3 style="font-weight: bold">Explicação:</h3>
+                        <p id="explicacao"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-12">
-                    <button class="btn btn-primary" id="verificarbtn" onclick="verificar()">Verificar</button>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary" id="verificarbtn" onclick="verificar()">Verificar</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
-        
+
     </main>
 
-    <footer class="fixed-bottom border-top text-white shadow border-3 border-dark border-opacity-75" style="background-color: #2b4a4e;">
+    <footer class="fixed-bottom border-top text-white shadow border-3 border-dark border-opacity-75"
+        style="background-color: #303649;">
         <div class="container">
-          <div class="row py-2">
-            <div class="col-12 col-md-4 text-center">
-              &copy; 2024 - LP.BR LTDA-ME<br>R. Joaquim Floriano, 63 - São Paulo<br>99.999.999/0001-99
+            <div class="row py-2">
+                <div class="col-12 col-md-4 text-center">
+                     Ádillan<br>Enem<br>Ryan
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a>Atividade de LP</a><br>
+                    <a>Professor Demetrios</a><br>
+                    <a>3°EM</a>
+                    <br>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="phone:28999990000" class="text-decoration-none text-white">Caio</a><br>
+                    <a href="mailto:email@dominio.com" class="text-decoration-none text-white">Igor</a><br>
+                    <a href="phone:28999990000" class="text-decoration-none text-white">Luiz</a>
+                    <br>
+                </div>
             </div>
-            <div class="col-12 col-md-4 text-center">
-              <a>Política de Privacidade</a><br>
-              <a>Termo De Uso</a><br>
-              <a>Atendimento Ao Cliente</a>
-              <br>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-              <a href="phone:28999990000" class="text-decoration-none text-white">Contato Pelo Site</a><br>
-              <a href="mailto:email@dominio.com" class="text-decoration-none text-white">E-mail: contato@enem.com.br</a><br>
-              Cel: <a href="phone:28999990000" class="text-decoration-none text-white">(28) 99999-0000</a>
-              <br>
-            </div>
-          </div>
         </div>
-      </footer>
+    </footer>
 
-      <!-- JavaScript -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>

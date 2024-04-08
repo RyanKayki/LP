@@ -1,24 +1,100 @@
 body {
     margin: 0%;
     padding: 0%;
-}
-.enem {
+  }
+  
+  .enem {
     max-width: 100%;
     height: auto;
-}
-#top {
+  }
+  
+  #top {
     background-color: #f8f8f8ee;
-    padding: 10px 0;
+    padding: 1.25rem 0; /* Converted 10px to rem based on body font size */
     color: #999;
-}
-.portal {
-    font-size: 24px;
-}
-footer {
+  }
+  
+  .portal {
+    font-size: 1.5rem; /* Converted 24px to rem based on body font size */
+  }
+  
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-}
+  }
+  
+  
+  /*--------------------------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------MODELO TEST FORMS-----------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------------------------------------------*/
+  
+  .form {
+    background: #606c88;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
+    background: linear-gradient(to right, #3f4c6b, #606c88);
+    padding: 5.64%; /* This value is already in percentage */
+    border-radius: 4.82%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20%;
+  }
+  
+  .perg {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: white;
+  }
+  
+  .description {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(209 213 219);
+  }
+  
+  .form div button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: rgb(99 102 241);
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+  }
+  
+  
+  .form .row1 input {
+    width: 70%;
+    color: #fff;
+    margin-bottom: 1.875rem; /* Converted 15px to rem based on body font size */
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+  }
+  
+  .form .row input {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255 );
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+  }
+  
+  .form .row input::placeholder {
+    color: rgb(216, 212, 212);
+  }
 
+
+
+  
