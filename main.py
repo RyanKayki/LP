@@ -3,19 +3,17 @@ from flask_cors import CORS
 import random
 
 lista_charadas = [
-  {"pergunta": "O que é, o que é? Tem um buraco no fundo e ninguém pode ver.", "resposta":"O espaço"},
-  {"pergunta": "O que sempre desce mas nunca sobe?", "resposta":"A chuva"},
-  {"pergunta": "O que é, o que é? É feito de água, mas se for colocado dentro da água morrerá.", "resposta": "O gelo"},
-  {"pergunta": "O que é, o que é? Quanto mais se tira, maior ele fica?", "resposta":"Um buraco"},
-  {"pergunta": "O que é, o que é? Pode ser atirado do alto de um prédio e ficar super bem. Mas quando é colocado na água morre pouco tempo depois.", "resposta":"O papel"},
-  {"pergunta": "O que é, o que é? Você tira a minha pele. Eu não choro. Você, sim.", "resposta":"A cebola"},
-  {"pergunta": "O que é, o que é? Ocorre uma vez a cada minuto, duas vezes a cada momento, mas jamais a cada quinhentos anos.","resposta":"A letra 'm'"},
-  {"pergunta": "O que é, o que é? Quanto mais seca, mais molhada ela fica?", "resposta":"A toalha"},
-  {"pergunta": "O que é, o que é? É mais útil quando é quebrado.", "resposta":"O ovo"},
-  {"pergunta": "O que é, o que é? Tem dente mas não morde?", "resposta":"O pente"},
-  {"pergunta": "O que é, o que é? Elas não têm carne, penas, escamas ou ossos. Mas têm dedos próprios.", "resposta":"As luvas"},
-  {"pergunta": "O que é, o que é? Não tem pés, mãos ou asas, mas pode subir aos céus.", "resposta":"A fumaça"}
-  ]
+  {"pergunta": "Quem é considerado o precursor do Pré-Modernismo na literatura brasileira?", "resposta":"Euclides da Cunha"},
+  {"pergunta": "Qual obra de Euclides da Cunha é considerada um marco do Pré-Modernismo?", "resposta":"Os Sertões"},
+  {"pergunta": "Quais são os temas principais abordados no Pré-Modernismo?", "resposta": "Conflitos sociais, realismo e crítica à modernização."},
+  {"pergunta": "Quem foi o autor do livro 'Os Sertões'?", "resposta":"Euclides da Cunha"},
+  {"pergunta": "Qual foi o conflito retratado em 'Os Sertões'?", "resposta":"A Guerra de Canudos"},
+  {"pergunta": "Qual é o principal evento histórico retratado em 'Os Sertões'?", "resposta":"A Guerra de Canudos"},
+  {"pergunta": "Além de 'Os Sertões', qual outra obra importante de Euclides da Cunha é relacionada ao Pré-Modernismo?", "resposta":"À Margem da História"},
+  {"pergunta": "Quais são os elementos estilísticos marcantes do Pré-Modernismo?", "resposta":"Uso de linguagem coloquial, narrativa fragmentada e crítica social."},
+  {"pergunta": "Que autor produziu obras de teatro influentes durante o Pré-Modernismo?", "resposta":"Martins Pena"},
+  {"pergunta": "Qual foi o contexto histórico que influenciou o surgimento do Pré-Modernismo no Brasil?", "resposta":"A crise do regime imperial, a abolição da escravatura e a transição para a República."}
+]
   
 
 
